@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/dungeon.css">
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div class="back">
+      <a href="/">
+          home
+      </a>
+    </div>
+    <div class="health">
+      health
+      <meter low="50" max="100" value="100"></meter>
+      <span id="procent">100%</span>
+    </div>
+    <div id="app"></div>
+    <div class="buttons">
+      <button id="left">
+        left
+      </button>
+      <button id="right">
+        right
+      </button>
+      <button id="top">
+        top
+      </button>
+      <button id="bottom">
+        bottom
+      </button>
+      <button id="fight">
+        fight
+      </button>
+      <div id="result"></div>
+    </div>
+    <script type="module" src="../dungeon/main.ts"></script>
+  </body>
+</html>
